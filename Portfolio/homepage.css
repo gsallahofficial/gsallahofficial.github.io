@@ -202,3 +202,51 @@ footer ul li {
   background-color: #666;
 }
 
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px; /* Reduce padding for header on smaller screens */
+  }
+
+  nav ul li {
+    display: block; /* Change display to block to make list items stack vertically */
+    margin: 10px 0; /* Add spacing between list items */
+  }
+
+  nav ul li::before {
+    bottom: 0; /* Move the pseudo element to the bottom of the list item */
+    height: 1px; /* Reduce the height of the pseudo element */
+  }
+
+  section {
+    padding: 20px; /* Increase padding for sections on smaller screens */
+  }
+
+  #about {
+    flex-direction: column; /* Change the flex direction of the about section to make image and text stack vertically */
+    align-items: center; /* Center items in the about section */
+  }
+
+  #about img {
+    margin-right: 0; /* Remove margin between image and text */
+    margin-bottom: 20px; /* Add spacing between image and text */
+  }
+
+  .project {
+    margin-bottom: 40px; /* Increase margin between projects */
+  }
+
+  .project h3 {
+    font-size: 18px; /* Reduce font size of project headings */
+    margin-top: 20px; /* Increase margin between project heading and content */
+  }
+
+  .project p {
+    font-size: 14px; /* Reduce font size of project content */
+  }
+
+  .social-icons a {
+    width: 25px; /* Reduce size of social icons */
+    height: 25px;
+    line-height: 25px;
+  }
+}
